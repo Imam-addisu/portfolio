@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  padding: 30px;
+}
+
+.resume {
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  display: flex;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* LEFT SIDEBAR */
+.sidebar {
+  width: 25%;
+  /* background: #1f2937; */
+  background: #0d6efd;
+  color: #fff;
+  padding: 30px 20px;
+}
+
+.sidebar h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.sidebar h3 {
+  font-size: 16px;
+  font-weight: 600;
+  /* color: #9ca3af; */
+  color: #f29102;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #a39e9e;
+}
+.sidbar-links {
+  margin-top: 10px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #a39e9e;
+}
+.sidbar-links ul li {
+  font-size: 16px;
+  font-weight: 500;
+  list-style: none;
+  margin-top: 5px;
+}
+.sidbar-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.sidbar-links ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.sidebar-contact {
+  margin-top: 10px;
+}
+.sidebar-contact p {
+  margin-top: 10px;
+}
+.sidebar-contact p a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.sidebar-contact p a:hover {
+  text-decoration: underline;
+}
+.sidebar-contact h4 {
+  font-size: 18px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #a39e9e;
+}
+.location {
+  font-size: 18px;
+  font-weight: 600px;
+  padding: 5px;
+  margin-top: 30px !important;
+  border: 2px solid #a39e9e;
+  border-radius: 7px;
+}
+
+.cv-print {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+  line-height: 1.6;
+  margin-top: 40px;
+}
+.cv-print button {
+  background-color: #f29102;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+.cv-print button:hover {
+  background-color: #0d6efd;
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+.main {
+  width: 70%;
+  padding: 30px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 20px;
+  color: #1f2937;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 5px;
+}
+
+.section p,
+.section li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.section ul {
+  padding-left: 18px;
+}
+
+.job-title {
+  font-weight: bold;
+  color: #111827;
+}
+
+.job-date {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .resume {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .main {
+    width: 100%;
+  }
+}
