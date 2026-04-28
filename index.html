@@ -26,50 +26,46 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand fs-3 fw-bold" href="#home">Imam</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- header section  starts here-->
 
-        <div class="collapse navbar-collapse navMenu" id="navMenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="navbar-brand fs-3 fw-bold">Imam</h1>
+        <nav class="main-nav" aria-label="Primary">
+          <ul>
+            <li>
               <a class="nav-link text-white fw-bold" href="#home">Home</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a class="nav-link text-white fw-bold" href="#about">About</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a class="nav-link text-white fw-bold" href="#skills">Skills</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a class="nav-link text-white fw-bold" href="#projects"
                 >Projects</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="#certeficates"
-                >Certeficates</a
-              >
+            <li>
+              <a class="nav-link text-white fw-bold" href="#certeficates">
+                Certeficates
+              </a>
             </li>
-            <li class="nav-item">
+            <li>
               <a class="nav-link text-white fw-bold" href="#mission">Mission</a>
             </li>
-            <li class="nav-item">
+            <li>
               <a class="nav-link text-white fw-bold" href="#contact">Contact</a>
             </li>
           </ul>
-        </div>
+        </nav>
+        <button id="mobileToggle" class="mobile-toggle" aria-expanded="false">
+          ☰
+        </button>
       </div>
-    </nav>
+    </header>
+    <!-- header section ends here -->
 
     <!-- Hero Section -->
     <section class="hero d-flex text-center" id="home">
@@ -133,8 +129,8 @@
           </div>
           <div class="col-md-5 mb-5 text-center">
             <img
-              src="assets/images/image-2-profile.png"
-              class="img-fluid rounded shadow about-image"
+              src="assets/images/about-photo.jpg"
+              class="img-fluid rounded shadow about-photo"
               alt="About image"
             />
           </div>
@@ -298,6 +294,54 @@
           <div class="col-md-4">
             <div class="card h-100">
               <img
+                src="assets/images/project-3.PNG"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Besheno Primary Hospital</h5>
+                <p class="card-text">
+                  Responsive multilingual hospital platform emphasizing
+                  responsive UI, accessibility, usability, and secured efficient
+                  healthcare communication using:-
+                </p>
+                <div class="project-skills">
+                  <ul>
+                    <li class="project-skill fw-bold">
+                      <abbr title="Hypertext Markup Language">HTML</abbr>
+                    </li>
+                    <li class="project-skill fw-bold">
+                      <abbr title="Cascading Style Sheets">CSS</abbr>
+                    </li>
+                    <li class="project-skill fw-bold">
+                      <abbr title="Java Script">Js</abbr>
+                    </li>
+                    <li class="project-skill fw-bold">Node.js</li>
+                    &
+                    <li class="project-skill fw-bold">Express</li>
+                  </ul>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Imam-addisu/Besheno-primary-hospital"
+                    target="_blank"
+                    class="project-link fw-bold"
+                    ><i class="fab fa-github"> </i> View Code
+                  </a>
+                  <a
+                    href="https://besheno-hospital.com.et/"
+                    target="_blank"
+                    class="project-link fw-bold"
+                    ><i class="fa fa-external-link"> </i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
                 src="assets/images/project-2.PNG"
                 class="card-img-top"
                 alt=""
@@ -381,54 +425,6 @@
                   </a>
                   <a
                     href="https://solutions-yeju.netlify.app"
-                    target="_blank"
-                    class="project-link fw-bold"
-                    ><i class="fa fa-external-link"> </i> Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img
-                src="assets/images/project-3.PNG"
-                class="card-img-top"
-                alt=""
-              />
-              <div class="card-body">
-                <h5 class="card-title">Besheno Primary Hospital</h5>
-                <p class="card-text">
-                  Responsive multilingual hospital platform emphasizing
-                  responsive UI, accessibility, usability, and secured efficient
-                  healthcare communication using:-
-                </p>
-                <div class="project-skills">
-                  <ul>
-                    <li class="project-skill fw-bold">
-                      <abbr title="Hypertext Markup Language">HTML</abbr>
-                    </li>
-                    <li class="project-skill fw-bold">
-                      <abbr title="Cascading Style Sheets">CSS</abbr>
-                    </li>
-                    <li class="project-skill fw-bold">
-                      <abbr title="Java Script">Js</abbr>
-                    </li>
-                    <li class="project-skill fw-bold">Node.js</li>
-                    &
-                    <li class="project-skill fw-bold">Express</li>
-                  </ul>
-                </div>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/Imam-addisu/Besheno-primary-hospital"
-                    target="_blank"
-                    class="project-link fw-bold"
-                    ><i class="fab fa-github"> </i> View Code
-                  </a>
-                  <a
-                    href="https://besheno-primary-hospital.netlify.app/"
                     target="_blank"
                     class="project-link fw-bold"
                     ><i class="fa fa-external-link"> </i> Live Demo
@@ -638,6 +634,7 @@
     </footer>
 
     <!-- Bootstrap JS -->
+    <script src="assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

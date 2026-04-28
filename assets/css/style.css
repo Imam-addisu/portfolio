@@ -13,12 +13,63 @@ body {
   scroll-behavior: smooth;
 }
 
-.navbar {
+/* header section  starts here */
+.site-header {
   background: #0d6efd;
+  color: white;
+  border-bottom: 1px solid #e6e9ef;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  height: 100px;
 }
-.navMenu ul li a:hover {
-  color: #000 !important;
-  transform: translateX(-2px);
+
+.header-inner {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-left: 0;
+  padding-top: 20px;
+}
+
+.main-nav {
+  width: 100%;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: 22px;
+  font-weight: 700;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  transform: translateY(-5px);
+  color: black;
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  /* position: absolute;
+  right: 20px;
+  top: 15px; */
 }
 
 /* hero section starts here */
@@ -82,17 +133,12 @@ span {
 .section {
   padding: 80px 0;
 }
-.about-image {
-  width: 300px;
-  height: 384px;
+.about-photo {
+  width: 400px;
+  height: 484px;
 }
 p {
   font-size: 16px;
-}
-@media (min-width: 768px) {
-  .about-image {
-    content: url(../images/banner-img.png);
-  }
 }
 
 /* about section ends here */
@@ -238,13 +284,40 @@ p {
   transform: translateY(-5px);
 }
 
-/* #scroll-Top .return-to-top :hover {
-  background-color: #fff;
-  color: #0d6efd;
-  width: 45px;
-  line-height: 45px;
-  height: 45px;
-  font-size: 24px;
-  border-radius: 50%;
-  border: 3px solid #0d6efd;
-} */
+/* =====================================
+   RESPONSIVE DESIGN -MEDIA QUERRY
+=====================================*/
+
+@media (max-width: 992px) {
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background: #0d6efd;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .mobile-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .site-header h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .site-header h1 {
+    font-size: 24px;
+  }
+}
