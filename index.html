@@ -30,45 +30,35 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <h1 class="navbar-brand fs-3 fw-bold">Imam</h1>
+        <!-- logo + text -->
+        <div class="logo-area">
+          <img src="assets/images/ኢማም-favicon.png" alt="logo" />
+          <h1 class="navbar-brand">Imam</h1>
+        </div>
+
+        <!-- navigation -->
         <nav class="main-nav" aria-label="Primary">
           <ul>
-            <li>
-              <a class="nav-link text-white fw-bold" href="#home">Home</a>
-            </li>
-            <li>
-              <a class="nav-link text-white fw-bold" href="#about">About</a>
-            </li>
-            <li>
-              <a class="nav-link text-white fw-bold" href="#skills">Skills</a>
-            </li>
-            <li>
-              <a class="nav-link text-white fw-bold" href="#projects"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a class="nav-link text-white fw-bold" href="#certeficates">
-                Certeficates
-              </a>
-            </li>
-            <li>
-              <a class="nav-link text-white fw-bold" href="#mission">Mission</a>
-            </li>
-            <li>
-              <a class="nav-link text-white fw-bold" href="#contact">Contact</a>
-            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+
+        <!-- mobile button -->
         <button id="mobileToggle" class="mobile-toggle" aria-expanded="false">
           ☰
         </button>
       </div>
     </header>
+
     <!-- header section ends here -->
 
     <!-- Hero Section -->
-    <section class="hero d-flex text-center" id="home">
+    <div class="hero d-flex text-center" id="home">
       <div class="container">
         <div row>
           <div class="main-text">
@@ -98,48 +88,58 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- About -->
-    <section id="about" class="section mt-5">
-      <div class="container bg-light pt-3">
-        <div class="row align-items-center">
-          <div class="col-md-7 mb-5">
-            <h2>About Me</h2>
-            <p>
-              I am a passionate Full-Stack Developer with a strong foundation in
-              building responsive, user-centered web applications from concept
-              to deployment. I specialize in turning complex problems into
-              clean, efficient, and scalable solutions using modern web
-              technologies.
-            </p>
-            <p>
-              On the front end, I work extensively with
-              <strong>HTML5, CSS3, and JavaScript</strong>, focusing on
-              accessibility, performance, and intuitive user experience. On the
-              back end, I develop and integrate
-              <strong>Node.js–based APIs</strong>, manage data flow, and ensure
-              secure, reliable communication between client and server.
-            </p>
-            <p>
-              I’m always exploring better ways to build, optimize, and scale
-              applications—and I’m excited about creating software that makes a
-              real impact.
-            </p>
-          </div>
-          <div class="col-md-5 mb-5 text-center">
-            <img
-              src="assets/images/about-photo.jpg"
-              class="img-fluid rounded shadow about-photo"
-              alt="About image"
-            />
+    <!-- about section starts here -->
+
+    <section class="about" id="about">
+      <h2>About Me</h2>
+
+      <div class="about-container">
+        <div class="about-text">
+          <p>
+            I am a passionate Full-Stack Developer with a strong foundation in
+            building responsive, user-centered web applications from concept to
+            deployment. I specialize in turning complex problems into clean,
+            efficient, and scalable solutions using modern web technologies.
+          </p>
+
+          <p>
+            On the front end, I work extensively with
+            <strong>HTML5, CSS3, JavaScript, and Bootstrap</strong>, focusing on
+            accessibility, responsive design, performance optimization, and
+            intuitive user experience. I enjoy creating modern interfaces that
+            are visually appealing, mobile-friendly, and easy to navigate.
+          </p>
+
+          <p>
+            On the back end, I specialize in building robust server-side
+            applications using <strong>Node.js and Express.js</strong>. I
+            develop RESTful APIs, handle authentication and authorization,
+            manage server routing, and ensure secure communication between
+            client and server. I also work with databases such as
+            <strong>MongoDB</strong> to design, store, and manage scalable
+            application data efficiently.
+          </p>
+
+          <p>
+            In addition, I have experience with Git and GitHub version control,
+            deployment workflows, debugging, and application optimization.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <div class="imam-image">
+            <img src="assets/images/about-photo.PNG" alt="About Image" />
           </div>
         </div>
       </div>
     </section>
 
+    <!-- about section ends here -->
+
     <!-- Skills -->
-    <section class="skills-header">
+    <section class="skills-header" id="skills">
       <div class="container bg-dark text-white">
         <div class="row">
           <div class="col text-center py-2">
@@ -149,7 +149,7 @@
       </div>
     </section>
 
-    <section id="skills" class="section pt-4">
+    <section class="section pt-4">
       <!-- Frontend skills  -->
       <div class="container text-center bg-light">
         <div class="row g-2 pt-4 pb-5">
@@ -227,7 +227,7 @@
 
     <!-- Projects -->
 
-    <section class="projects-header">
+    <section class="projects-header" id="projects">
       <div class="container bg-dark text-white">
         <div class="row">
           <div class="col text-center py-2">
@@ -237,13 +237,13 @@
       </div>
     </section>
 
-    <section id="projects" class="section pt-4">
+    <section class="section pt-4">
       <div class="container bg-light">
-        <div class="row g-2 pt-4">
+        <div class="row g-4 pt-4">
           <div class="col-md-4">
             <div class="card h-100">
               <img
-                src="assets/images/project-0.PNG"
+                src="assets/images/project-1.PNG"
                 class="card-img-top"
                 alt=""
               />
@@ -294,15 +294,15 @@
           <div class="col-md-4">
             <div class="card h-100">
               <img
-                src="assets/images/project-3.PNG"
+                src="assets/images/project-2.PNG"
                 class="card-img-top"
-                alt=""
+                alt="Besheno hospital website"
               />
               <div class="card-body">
                 <h5 class="card-title">Besheno Primary Hospital</h5>
                 <p class="card-text">
                   Responsive multilingual hospital platform emphasizing
-                  responsive UI, accessibility, usability, and secured efficient
+                  responsive UI, accessibility, and usability, efficient
                   healthcare communication using:-
                 </p>
                 <div class="project-skills">
@@ -316,9 +316,9 @@
                     <li class="project-skill fw-bold">
                       <abbr title="Java Script">Js</abbr>
                     </li>
-                    <li class="project-skill fw-bold">Node.js</li>
+                    <li class="project-skill fw-bold">fa</li>
                     &
-                    <li class="project-skill fw-bold">Express</li>
+                    <li class="project-skill fw-bold">git</li>
                   </ul>
                 </div>
                 <div class="project-links">
@@ -342,7 +342,7 @@
           <div class="col-md-4">
             <div class="card h-100">
               <img
-                src="assets/images/project-2.PNG"
+                src="assets/images/project-3.PNG"
                 class="card-img-top"
                 alt=""
               />
@@ -389,33 +389,8 @@
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img
-                src="assets/images/project-1.PNG"
-                class="card-img-top"
-                alt=""
-              />
-              <div class="card-body">
-                <h5 class="card-title">Yeju Web Solutions</h5>
-                <p class="card-text">
-                  Designed and developed a fully responsive portfolio website
-                  focusing on modern UI, performance, and cross-device
-                  compatibility using:-
-                </p>
-                <div class="project-skills">
-                  <ul>
-                    <li class="project-skill fw-bold">
-                      <abbr title="Hypertext Markup Language">HTML</abbr>
-                    </li>
-                    <li class="project-skill fw-bold">
-                      <abbr title="Cascading Style Sheets">CSS</abbr>
-                    </li>
-                    <li class="project-skill fw-bold">JavaScript</li>
-                    &
-                    <li class="project-skill fw-bold">Bootstrap</li>
-                  </ul>
-                </div>
+                <!-- 
+          MY FIRTS WEBSITE LINK      MY FIRTS WEBSITE LINK    MY FIRTS WEBSITE LINK
                 <div class="project-links">
                   <a
                     href="https://github.com/Imam-addisu/Personal-website-"
@@ -430,25 +405,25 @@
                     ><i class="fa fa-external-link"> </i> Live Demo
                   </a>
                 </div>
-              </div>
-            </div>
+               -->
+
           </div>
         </div>
       </div>
     </section>
 
     <!-- Serteficates -->
-    <section class="certeficates-header" id="certeficates">
+    <section class="certeficates-header" id="certificates">
       <div class="container bg-dark text-white">
         <div class="row">
           <div class="col text-center py-2">
-            <h2>Certeficates</h2>
+            <h2>Certificates</h2>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section pt-4" id="certeficates">
+    <section class="section pt-4">
       <div class="container bg-light">
         <div class="row align-items-center pt-4 pb-5">
           <div class="col-3">
@@ -531,66 +506,9 @@
       </div>
     </section>
 
-    <!-- mission, vission and fun fuct -->
-    <!-- <section id="mission" class="mission-header">
-      <div class="container bg-dark text-white">
-        <div class="row">
-          <div class="col text-center py-2">
-            <h2>Mission, vision and Fun Facts</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section pt-4">
-      <div class="container bg-light">
-        <div class="row align-items-center">
-          <div class="col-md-6 pt-4">
-            <div>
-              <h4>🚀 Mission</h4>
-              <p>
-                To build reliable, scalable, and user-focused web applications
-                that solve real-world problems through clean code and thoughtful
-                design.
-              </p>
-            </div>
-            <div>
-              <h4 class="pt-3">🌍 Vision</h4>
-              <p>
-                To grow as a full-stack developer who creates impactful digital
-                solutions and contributes to meaningful, technology-driven
-                innovation.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 pt-4">
-            <h4>🎯 Fun Fucts</h4>
-            <p>
-              I love coding, exploring new tech, CSS animations, and optimizing
-              website performance—because a fast website is like a healthy
-              heart!
-            </p>
-            <ul>
-              <li>
-                I enjoy working on both frontend and backend—seeing the full
-                picture is my favorite part
-              </li>
-              <li>
-                I turn complex requirements into simple, working solutions
-              </li>
-              <li>
-                Debugging feels like solving a puzzle (and yes, I enjoy it 😄)
-              </li>
-              <li>I believe clean code today saves hours tomorrow</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
     <!-- Contact -->
-    <section id="contact" class="section bg-dark text-light">
-      <div class="container text-center">
+    <div class="contact bg-dark text-light" id="contact">
+      <div class="text-center">
         <div class="row">
           <div class="col-sm-11">
             <h2>Contact Me</h2>
@@ -626,7 +544,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="text-center footer py-3">
