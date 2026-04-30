@@ -470,3 +470,19 @@ span {
     font-size: 0.95rem;
   }
 }
+
+@media (max-width: 768px) {
+  .section header {
+    margin-bottom: 0.5rem;
+  }
+
+  .section h5 {
+    font-size: 1.1rem;
+  }
+
+  .section .issuer,
+  .section .certeficate-date,
+  .section .certeficate-link {
+    font-size: 0.95rem;
+  }
+}
